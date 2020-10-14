@@ -6,4 +6,4 @@
 
 [![Build Status](https://travis-ci.org/TAS-7/KDY-SITE.svg?branch=master)](https://travis-ci.org/TAS-7/KDY-SITE/)
 
-<br/> Website under construction , stay tuned! <br/>
+<br/> Website under construction , stay tuned! 
