@@ -1,5 +1,5 @@
 # KDY-SITE
-<br/><br/><br/>
+
 
 [![Coverage Status](https://coveralls.io/repos/github/TAS-7/KDY-SITE/badge.svg?branch=master&service=github)](https://coveralls.io/github/TAS-7/KDY-SITE?branch=master) 
 
