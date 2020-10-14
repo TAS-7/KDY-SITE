@@ -1,0 +1,24 @@
+language: python
+
+python:
+# python versions
+- "3.8"
+- "3.7"
+- "3.6"
+
+# install dependencies
+install:
+
+#- pip install -r requirements.txt
+#- pip install django-crispy-forms
+#- pip install coveralls
+#- pip install pytest-cov
+#- pip install pytest-django
+
+
+script:
+#- coverage run --source=./ manage.py test CodeGrinders
+
+
+after_success:
+ - coveralls
