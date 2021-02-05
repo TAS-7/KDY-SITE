@@ -24,7 +24,7 @@
     <header class="site-header">
         <nav class="navbar navbar-expand-md bg-dark navbar-dark">
               <!-- Brand -->
-            <a class="navbar-brand" href="#">SurrealTutors</a>
+            <a class="navbar-brand" href="{% url 'website-home'%}">SurrealTutors</a>
 
               <!-- Toggler/collapsibe Button -->
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
@@ -34,12 +34,26 @@
               <!-- Navbar links -->
             <div class="collapse navbar-collapse" id="collapsibleNavbar">
                 <ul class="navbar-nav ml-auto">
+                    {% if user.is_authenticated %}
+                    
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Sign Up</a>
+                        <a class="nav-link" href="#">Hi, {{user.username}}!</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="{% url 'logout'%}">Logout</a>
+                    </li>
+
+                    {%else %}
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="{% url 'register'%}">Sign Up</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#"><span class="fa fa-sign-in"></span>Login</a>
+                        <a class="nav-link" href="{% url 'login' %}"><span class="fa fa-sign-in"></span>Login</a>
                     </li>
+
+                    {% endif %}
                 </ul> 
             </div>
         </nav>
