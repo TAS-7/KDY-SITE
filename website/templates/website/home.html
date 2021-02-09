@@ -2,7 +2,35 @@
 
 
 {% block content %}
+{% if user.is_authenticated %}
+
+{% else %}
 
 
+  <div class="jumbotron jumbotron-fluid text-center">
+	  <div class="container">
+		  <h1>Welcome to CompanyName</h1>
+		  <p>Proceed and post that question that has been bothering you!</p>
+		  <p>We are looking forward to your intriguing question.</p>
+	  </div>
+
+	  <div class="border-top pt-3">
+
+		 <small class="text-muted"></small>
+		 <a class="ml-4" href="{% url 'login' %}">
+
+		 	 <button class="btn btn-primary btn-sm">Post</button>
+		 </a>
+
+      </div>
+
+	 
+  </div>
+
+  
+
+
+
+{% endif%}
 
 {%endblock content%}

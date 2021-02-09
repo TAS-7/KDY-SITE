@@ -1,0 +1,4 @@
+git config --global http.sslVerify false
+git config --global https.sslVerify false
+git config --global http.proxy http://user:pass@yourproxy:port
+git config --global https.proxy http://user:pass@yourproxy:port

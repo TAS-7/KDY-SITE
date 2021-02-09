@@ -12,6 +12,9 @@ class UserRegisterForm(UserCreationForm):
     education= forms.CharField(widget=forms.Select(choices=educationlevel))
     level =forms.CharField(widget=forms.Select(choices=levels))
     subjects = forms.CharField(help_text ='Please enter the subjects you need assistance with.')
+    #points = forms.IntegerField(initial=0);
+    #credibility =forms.CharField(initial='low')
+
 
     class Meta:
         model = User
